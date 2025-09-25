@@ -2,12 +2,27 @@
 from flask import Flask, request, jsonify, send_from_directory
 import requests
 import json
+import os
+
+# Función simple para cargar variables del archivo .env
+def load_env_file():
+    env_file = '.env'
+    if os.path.exists(env_file):
+        with open(env_file, 'r') as file:
+            for line in file:
+                line = line.strip()
+                if line and not line.startswith('#') and '=' in line:
+                    key, value = line.split('=', 1)
+                    os.environ[key.strip()] = value.strip()
+
+# Cargar variables del .env si existe
+load_env_file()
 
 app = Flask(__name__)
 
 # --- Configuración del Endpoint de Azure ---
-AZURE_URL = 'URL_AZURE'
-AZURE_API_KEY = 'CLAVE_PRIMARIA_AZURE'
+AZURE_URL = os.getenv('AZURE_URL')
+AZURE_API_KEY = os.getenv('AZURE_API_KEY')
 # ----------------------------------------
 
 @app.route('/')
