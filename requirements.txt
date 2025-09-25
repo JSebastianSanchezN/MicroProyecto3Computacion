@@ -1,0 +1,6 @@
+tensorflow==2.16.1
+numpy==1.26.4
+opencv-python==4.9.0.80
+pydicom==2.4.4
+azureml-defaults
+Pillow==10.4.0
