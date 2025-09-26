@@ -245,6 +245,8 @@ Santiago Cortes Murcia – [GitHub](https://github.com/SantiagoCorM)
 
 ---
 
-## Licencia  
+## Licencia
+Este proyecto se distribuye bajo la licencia MIT.
 
-Este proyecto está bajo la licencia MIT – ver el archivo [LICENSE](LICENSE) para más detalles.  
+Ver archivo [LICENSE](LICENSE) para más detalles.
+  
