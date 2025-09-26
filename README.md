@@ -148,7 +148,7 @@ MicroProyecto3Computacion/
 │
 ├── app.py                  # Servidor proxy en Flask
 ├── arquitectura_de_componentes.png   # Diagrama de arquitectura
-├── Dockerfile.txt          # Informacion para pegar en azure
+├── Dockerfile.txt          # Informacion que se debe ejecutar en azure
 ├── generate_test_json.py   # Script para generar peticiones de prueba
 ├── index.html              # Interfaz web (cliente)
 ├── requirements.txt        # Dependencias del proyecto
