@@ -74,24 +74,19 @@ El sistema sigue una arquitectura cliente–servidor–nube:
    cd MicroProyecto3Computacion
    ```  
 
-2. Instalar dependencias locales (para proxy e interfaz web):  
-   ```bash
-   uv pip install -r requirements.txt
-   ```  
-
-3. Configurar variables de entorno:  
+2. Configurar variables de entorno:  
    Crear un archivo `.env` con la clave del servicio de Azure:  
    ```env
    AZURE_API_KEY=tu_api_key
    AZURE_ENDPOINT=https://<tu-endpoint>.azurecontainer.io/score
    ```  
 
-4. Ejecutar el **servidor proxy local**:  
+3. Ejecutar el **servidor proxy local**:  
    ```bash
-   uv run app.py
+   Python run app.py 
    ```  
 
-5. Abrir en el navegador la **interfaz web (index.html)** servida por Flask.  
+4. Abrir en el navegador la **interfaz web (index.html)** servida por Flask.  
 
 ⚠️ **Nota:** El modelo **NO se ejecuta localmente**. Toda la inferencia se procesa en el **endpoint de Azure** desplegado en **Container Instances (ACI)** mediante el script `score.py`.  
 
@@ -152,20 +147,6 @@ MicroProyecto3Computacion/
 ├── requirements.txt        # Dependencias
 ├── main.py                 # Ejecución principal (interfaz local)
 └── README.md               # Este archivo
-```  
-
----
-
-## Docker  
-
-Construcción de imagen:  
-```bash
-docker build -t neumonia-app .
-```  
-
-Ejecución en contenedor:  
-```bash
-docker run --rm neumonia-app python app.py
 ```  
 
 ---
