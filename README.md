@@ -181,4 +181,7 @@ docker run --rm neumonia-app python app.py
 
 ## Licencia  
 
-Este proyecto se distribuye bajo la licencia **MIT**. Consulte el archivo `LICENSE` para más detalles.  
+Este proyecto se distribuye bajo la licencia MIT.
+
+Ver archivo [LICENSE](LICENSE) para más detalles.
+
