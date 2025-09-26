@@ -4,3 +4,4 @@ opencv-python==4.9.0.80
 pydicom==2.4.4
 azureml-defaults
 Pillow==10.4.0
+azureml-inference-server-http
