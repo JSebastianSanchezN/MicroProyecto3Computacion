@@ -135,18 +135,28 @@ Esto hace que la solución sea **viable y sostenible económicamente**.
 
 ```plaintext
 MicroProyecto3Computacion/
-├── data/                   # Radiografías de prueba
-├── reports/                # Reportes y figuras
-├── src/                    # Código fuente
-│   ├── controller
-│   ├── model
-│   ├── view
-├── app.py                  # Proxy local
-├── score.py                # Script de inferencia en Azure
-├── Dockerfile              # Definición de contenedor
-├── requirements.txt        # Dependencias
-├── main.py                 # Ejecución principal (interfaz local)
-└── README.md               # Este archivo
+├── data/                   # Datos de prueba
+│   ├── DICOM/              # Radiografías en formato DICOM
+│   │     ├── normal (2).dcm
+│   │     ├── normal (3).dcm
+│   │     ├── viral (2).dcm
+│   │     └── viral (3).dcm
+│   │
+│   ├── JPG/                # Radiografías en formato JPG/JPEG
+│   │     ├── Prueba.jpg
+│   │     └── Prueba2.jpeg
+│
+├── app.py                  # Servidor proxy en Flask
+├── arquitectura_de_componentes.png   # Diagrama de arquitectura
+├── Dockerfile.txt          # Archivo Docker para empaquetar el entorno
+├── generate_test_json.py   # Script para generar peticiones de prueba
+├── index.html              # Interfaz web (cliente)
+├── requirements.txt        # Dependencias del proyecto
+├── score.py                # Script de puntuación desplegado en Azure
+├── LICENSE                 # Licencia MIT
+├── README.md               # Documentación del proyecto
+└── .gitignore              # Archivos y carpetas ignoradas por Git
+
 ```  
 
 ---
