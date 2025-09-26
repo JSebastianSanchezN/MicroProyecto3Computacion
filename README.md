@@ -53,7 +53,7 @@ El sistema sigue una arquitectura cliente–servidor–nube:
 5. El resultado (JSON con clase y probabilidad) se devuelve al navegador.  
 
 📌 **Diagrama de Componentes:**  
-![Arquitectura de componentes](Arquitectura_de_componentes.png)  
+![Arquitectura de componentes](arquitectura_de_componentes.png)  
 
 ---
 
